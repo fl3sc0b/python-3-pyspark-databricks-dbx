@@ -1,8 +1,12 @@
-# Python 3
+# Python 3 - Pyspark - Databricks - dbx
 
 ## Summary
 
 *Develop Pyspark applications under a fully configured Python 3 development environment. Send jobs to your Databricks workspace using dbx directly from VS Code.*
+
+![Access to docs](./README/img/docum.png)
+
+![Code analysis](./README/img/code-analysis.png)
 
 *This definition is an extension of the Python 3 one. See the details [here](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md).*
 
@@ -20,7 +24,7 @@ You can get it [here](https://aka.ms/vscode-remote/download/containers).
 
 ### Step 3 - Click on the Remote Window toolbox and then `Open Folder in Container...`
 
-![The Remote Window toolbox](./README/img/remote-windows-toolbox.PNG)
+![The Remote Window toolbox](./README/img/remote-windows-toolbox.png)
 
 ### Step 4 - Browse to this repo (your branch should be active)
 
@@ -48,6 +52,8 @@ You will need to choose a name for your project. You also will be asked about yo
 - Databricks Cluster ID
 
 A new folder with the name of your project will be created. The Databricks configuration files will be stored inside under `project_name/conf/databricks-config.sh` file, but for security reasons these data will not be tracked by the repo.
+
+Press a key to close the terminal.
 
 ### Step 7 - Add your code to the recently created file `project_name/project_name.py`
 
@@ -95,8 +101,11 @@ temps = spark.createDataFrame(data, schema)
 
 You will be asked again about the name of your project. If everything works fine, you should see the result of the execution on a new terminal window:
 
+![Results of the execution](./README/img/results.png)
 
+Press a key to close the terminal.
 
+### Step 9 - Finally, to close the remote session with the container, click again on the Remote Windows toolbox and select Close Remote Session
 
 ## License
 
