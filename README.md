@@ -2,13 +2,13 @@
 
 ## Summary
 
-*Develop Pyspark applications under a fully configured Python 3 development environment. Send jobs to your Databricks workspace using dbx directly from VS Code.*
+*Develop **Pyspark** applications under a fully configured **Python 3** development environment. Send jobs to your **Databricks** workspace using **dbx** directly from **VS Code**.*
 
 ![Access to docs](./README/img/docum.png)
 
 ![Code analysis](./README/img/code-analysis.png)
 
-*This definition is an extension of the Python 3 one. See the details [here](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md).*
+*This definition is an extension of the Python 3 containerized one. See the details [here](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md). Check the official repo with all the containerized development environments for Visual Studio Code [here](https://github.com/microsoft/vscode-dev-containers).
 
 ## Using this definition
 
@@ -51,7 +51,13 @@ You will need to choose a name for your project. You also will be asked about yo
 - Databricks PAT (Personal Access Token)
 - Databricks Cluster ID
 
-A new folder with the name of your project will be created. The Databricks configuration files will be stored inside under `project_name/conf/databricks-config.sh` file, but for security reasons these data will not be tracked by the repo.
+A new folder with the name of your project will be created. The Databricks configuration files will be stored inside under `project_name/conf/databricks-config.sh` file, but for security reasons these data will not be tracked by the repo. Please, note that if you need it, you can modify manually the values in this file to update them:
+
+```bash
+export DATABRICKS_HOST="<DATABRICKS_HOST>"
+export DATABRICKS_TOKEN="<DATABRICKS_TOKEN>"
+export DATABRICKS_CLUSTER_ID="<DATABRICKS_CLUSTER_ID>"
+```
 
 Press a key to close the terminal.
 
@@ -105,9 +111,11 @@ You will be asked again about the name of your project. If everything works fine
 
 Press a key to close the terminal.
 
-### Step 9 - Finally, to close the remote session with the container, click again on the Remote Windows toolbox and select Close Remote Session
+### Step 9 - Finally, to close the remote session with the container, click again on the Remote Windows toolbox and select `Close Remote Connection`
 
 ## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
 
 Licensed under the MIT License. See [LICENSE](https://github.com/microsoft/vscode-dev-containers/blob/main/LICENSE)
 
