@@ -43,6 +43,8 @@ Click on the **Remote Window toolbox** and then `Open Folder in Container...`
 
 ![The Remote Window toolbox](./README/img/remote-windows-toolbox.png)
 
+You will need to have **Docker** installed on your machine. If you do not have it, the **VS Code Remote - Containers extension** will guide you to get it.
+
 ### **Step 5** - Browse to your copy of the repo
 If everything went well, **VS Code** should be now connected to the container image which should be running a **VS Code Server** instance inside.
 
