@@ -10,6 +10,8 @@ Develop your own **Pyspark** applications under a fully configured **Python 3** 
 
 *This definition is an extension of the **Python 3** containerized one. See the details [here](https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md). Check the official repo with all the containerized development environments for **Visual Studio Code** [here](https://github.com/microsoft/vscode-dev-containers).
 
+*The integration with **dbx** and a couple of examples are demonstrated in [this](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/dbx) official document from Microsoft.
+
 ## Using this definition
 
 ### **Set up the containerized environment**
@@ -17,7 +19,7 @@ Develop your own **Pyspark** applications under a fully configured **Python 3** 
 #### **Step 1** - Clone the repo using **git**
 
 ```bash
-git clone https://github.com/fl3sc0b/python-3-pyspark-databricks-dbx.git
+git clone <repo>
 ```
 
 #### **Step 2** - If you prefer, to simplify things get rid of the version control now
